@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>International Ticket Booking</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #008cba;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .contact-info,
+    .places,
+    .booking-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .places img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .booking-container {
+      max-width: 500px;
+      margin: 0 auto 50px auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input,
+    select,
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      main {
+        padding: 15px;
+      }
+
+      .contact-info,
+      .places,
+      .booking-container {
+        padding: 15px;
+      }
+
+      input,
+      select,
+      button {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      header {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      .contact-info,
+      .places,
+      .booking-container {
+        padding: 10px;
+      }
+
+      input,
+      select,
+      button {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      footer {
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>International Ticket Booking</h1>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>Traveler Group Contact Info</h2>
+      <p><strong>Phone:</strong> +123 456 7890</p>
+      <p><strong>Email:</strong> travelgroup@example.com</p>
+      <p><strong>Address:</strong> 123 Travel Lane, Wanderlust City</p>
+    </section>
+
+    <section class="places">
+      <h2>Destinations</h2>
+      <p>Explore these amazing places: fill up the form</p>
+    </section>
+
+    <section class="booking-container">
+      <h2>Book Your International Flight</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+
+        <label for="passport">Passport Number</label>
+        <input type="text" id="passport" placeholder="Enter passport number" required>
+
+        <label for="from">Departure City</label>
+        <select id="from" required>
+          <option value="">Select city</option>
+          <option>Kolkata, India</option>
+          <option>New York, USA</option>
+          <option>Tokyo, Japan</option>
+          <option>Paris, France</option>
+          <option>Sydney, Australia</option>
+        </select>
+
+        <label for="to">Destination City</label>
+        <select id="to" required>
+          <option value="">Select destination</option>
+          <option>Dubai, UAE</option>
+          <option>London, UK</option>
+          <option>Berlin, Germany</option>
+          <option>Toronto, Canada</option>
+          <option>Rome, Italy</option>
+        </select>
+
+        <label for="date">Departure Date</label>
+        <input type="date" id="date" required>
+
+        <label for="class">Class</label>
+        <select id="class" required>
+          <option value="">Select class</option>
+          <option>Economy</option>
+          <option>Business</option>
+          <option>First Class</option>
+        </select>
+
+        <button type="submit">Book Flight</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Copyrighted by Hiranmoy Nath. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

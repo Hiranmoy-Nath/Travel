@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+    background-color: rgb(200, 206, 211);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 25px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form p {
+    color: blue;
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .e, .p {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .e i, .p i {
+    margin-right: 10px;
+    color: #666;
+  }
+  
+  .m, .l {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 35px;
+  }
+  
+  .b {
+    margin-top: 30px;
+  }
+  
+  .button {
+    width: 150px;
+    height: 40px;
+    background-color: #eed9a5;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .b a{
+    text-decoration: none;
+  }
+  .button:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  body {
+    background-color: rgb(200, 206, 211);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form {
+    width: 90%;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 25px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form p {
+    color: blue;
+    font-family: 'Lucida Calligraphy';
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .e, .p {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .e i, .p i {
+    margin-right: 10px;
+    color: #666;
+  }
+  
+  .m, .l {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 35px;
+  }
+  
+  .b {
+    margin-top: 30px;
+  }
+  
+  .button {
+    width: 150px;
+    height: 40px;
+    background-color: #eed9a5;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* 🌍 MEDIA QUERIES */
+  
+  /* Phones (portrait & landscape) */
+  @media (max-width: 480px) {
+    .form {
+      margin: 30px auto;
+      padding: 15px;
+    }
+    .form p {
+      font-size: 1rem;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+  
+  /* Small Devices (iPhone SE, Galaxy Fold, etc.) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .form {
+      max-width: 90%;
+      padding: 18px;
+    }
+  }
+  
+  /* Tablets (portrait) & small iPads */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .form {
+      max-width: 400px;
+      padding: 25px;
+    }
+  }
+  
+  /* Tablets (landscape) & medium laptops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .form {
+      max-width: 420px;
+    }
+  }
+  
+  /* Large Devices (Desktops & Big Laptops) */
+  @media (min-width: 1200px) {
+    .form {
+      max-width: 450px;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+  <section class="form">
+    <p>Welcome to Admin block</p>
+    <form>
+      <div class="e">
+        <i class="fas fa-envelope"></i>
+        <input type="email" class="m" placeholder="Registered email">
+      </div>
+      <div class="p">
+        <i class="fas fa-key"></i>
+        <input type="password" class="l" placeholder="Enter password">
+      </div>
+      <div class="b">
+        <button type="submit" class="button"><a href="">Enter</a></button>
+      </div>
+    </form>
+    <p>&copy; copyrighted by Hiranmoy Nath 2025.<br>All rights are reserved.</p>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

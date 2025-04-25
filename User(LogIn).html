@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In</title>
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(to right, #f0f2f5, #d9e2ec);
+        font-family: Arial, sans-serif;
+      }
+
+      .para {
+        text-align: center;
+        margin-top: 30px;
+        color: #2233aa;
+        font-family: 'Lucida Calligraphy', cursive;
+        font-size: 1.5rem;
+      }
+
+      .form {
+        background: #ffffff;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 30px auto;
+      }
+
+      .icons {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .icons i {
+        font-size: 24px;
+        margin: 0 10px;
+        color: #4267B2;
+        cursor: pointer;
+      }
+
+      .d1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .d1 i {
+        font-size: 30px;
+        color: #333;
+      }
+
+      .data {
+        text-align: center;
+      }
+
+      .mail, .password {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+      }
+
+      .mail i, .password i {
+        margin-right: 10px;
+        color: #444;
+      }
+
+      .e, .p {
+        border: 1px solid #ccc;
+        padding: 8px;
+        border-radius: 5px;
+        width: 70%;
+      }
+
+      .b {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .b button {
+        background-color: #4a69bd;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: 'Lucida Calligraphy';
+        transition: background-color 0.3s;
+      }
+
+      .b button:hover {
+        background-color: #3b5998;
+      }
+
+      button a {
+        text-decoration: none;
+        color: white;
+      }
+
+      section p {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+        font-size: 0.9rem;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .form {
+          width: 80%;
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        .form {
+          width: 90%;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .form {
+          padding: 15px;
+        }
+        .e, .p {
+          width: 80%;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        .form {
+          width: 95%;
+          margin: 20px;
+        }
+        .para p {
+          font-size: 1.2rem;
+        }
+      }
+
+      @media only screen and (max-width: 375px) {
+        .form {
+          padding: 10px;
+        }
+        .e, .p {
+          width: 90%;
+        }
+        .b button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="para">
+      <p>Welcome back, Log In and explore more.<br>Thank You</p>
+    </div>
+    <section class="form">
+      <div class="icons">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <form>
+        <div class="d1">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="data">
+          <div class="mail">
+            <i class="fas fa-envelope"></i>
+            <input type="email" class="e" placeholder="Email">
+          </div>
+          <div class="password">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="p" placeholder="Password">
+          </div>
+        </div>
+        <div class="b">
+          <button><a href="#">Log In</a></button>
+        </div>
+      </form>
+      <p>&copy;copyrighted by Hiranmoy Nath 2025<br>All rights are reserved.</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
